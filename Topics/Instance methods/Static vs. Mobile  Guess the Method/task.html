@@ -1,0 +1,23 @@
+<div class="step-text">
+<p>Consider a class 'Car' in Java. Which statements correctly differentiate the behaviors and restrictions of instance methods and static methods based on the following definitions?
+
+</p><pre><code class="java">
+public class Car {
+    private static int totalCars = 0;
+    private String model;
+    
+    public Car(String model) {
+        this.model = model;
+        totalCars++;
+    }
+
+    public void displayModel() {  // Instance method
+        System.out.println("Model: " + this.model);
+    }
+
+    public static void displayTotalCars() {  // Static method
+        System.out.println("Total cars: " + totalCars);
+    }
+}
+</code></pre>
+</div>
